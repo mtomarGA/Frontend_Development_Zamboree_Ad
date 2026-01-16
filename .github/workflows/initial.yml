@@ -16,7 +16,10 @@ jobs:
           echo "Hostname:"
           hostname
           whoami
-          
-      - name: Check Node
-        run: node -v
 
+      - name: Check Node
+        run: |
+          export NVM_DIR="$HOME/.nvm"
+          [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+          node -v
+          npm -v
