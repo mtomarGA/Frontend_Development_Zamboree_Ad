@@ -16,4 +16,6 @@ jobs:
           echo "Hostname:"
           hostname
           whoami
+      - name: Check Node
+        run: node -v
 
