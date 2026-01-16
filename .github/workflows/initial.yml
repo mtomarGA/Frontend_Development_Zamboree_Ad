@@ -1,0 +1,86 @@
+name: CI/CD - Build and Deploy
+
+on:
+  push:
+    branches: ['staging']
+  pull_request:
+    branches: ['staging']
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [22.x]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+        env:
+          NODE_OPTIONS: "--max-old-space-size=4096"
+
+      - name: Build the project (if applicable)
+        run: npm run build --if-present
+        env:
+          NODE_OPTIONS: "--max-old-space-size=4096"
+
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/staging'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install SSH Client
+        run: sudo apt-get install openssh-client -y
+
+      - name: Set up SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.VPS_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan 157.173.219.220 >> ~/.ssh/known_hosts
+
+      - name: Deploy to VPS
+        run: |
+          ssh root@157.173.219.220 << 'EOF'
+            echo "🔄 Navigating to the project directory..."
+            cd /var/www/happening_bazaar_dashboard
+            
+            echo "🧹 Cleaning local changes..."
+            git reset --hard
+            
+            echo "🔄 Pulling latest changes..."
+            git pull origin staging
+            
+            echo "📝 Setting up environment variables..."
+            echo "NEXT_PUBLIC_URL=${{ secrets.ENV_PUBLIC_URL }}" > .env
+            echo "NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=${{ secrets.ENV_GOOGLE_MAPS_API_KEY }}" >> .env
+            echo "NEXTAUTH_SECRET=${{ secrets.ENV_NEXTAUTH_SECRET }}" >> .env
+            echo "AUTH_URL=${{ secrets.ENV_AUTH_URL }}" >> .env
+            
+            echo "📦 Installing dependencies with increased memory..."
+            export NODE_OPTIONS="--max-old-space-size=4096"
+            npm ci
+            
+            echo "🗑️ Removing previous build..."
+            rm -rf .next
+            
+            echo "🔨 Building the project with increased memory..."
+            npm run build
+            
+            echo "🚀 Restarting the application..."
+            pm2 restart happening_bazaar_frontend
+            
+            echo "✅ Deployment completed successfully!"
+          EOF

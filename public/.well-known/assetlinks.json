@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.happening.user",
+    "sha256_cert_fingerprints":
+    ["84:12:0E:05:AB:EF:9C:47:39:9A:F9:D8:C2:7B:5B:F7:E2:55:33:8E:08:DD:6C:32:35:FD:DF:9E:85:03:2D:55", "7C:25:A1:1D:74:1C:BF:EE:1A:C8:89:FC:19:F5:93:85:2B:EB:19:81:95:48:6A:8F:6E:7D:8B:65:C3:40:B6:18"]
+  }
+}]

@@ -1,0 +1,2303 @@
+[
+    {
+        "type": "item",
+        "label": "Dashboard",
+        "icon": "tabler-smart-home",
+        "href": "/dashboards/crm"
+    },
+    {
+        "type": "submenu",
+        "label": "User",
+        "icon": "tabler-users",
+        "permissions": [
+            "user_create_user:add",
+            "user_all_users:view",
+            "user_user_master:view"
+        ],
+        "children": [
+            {
+                "type": "item",
+                "label": "Create User",
+                "href": "/apps/coustomers/createUser",
+                "permissions": [
+                    "user_create_user:add"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "All User",
+                "href": "/apps/coustomers/alluser",
+                "permissions": [
+                    "user_all_users:view"
+                ]
+            },
+            {
+                "type": "submenu",
+                "label": "Masters",
+                "permissions": [
+                    "user_user_master:view"
+                ],
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Interest",
+                        "href": "/apps/coustomers/Master/userInterests"
+                    },
+                    {
+                        "type": "item",
+                        "label": "Gender",
+                        "href": "/apps/coustomers/Master/userGender"
+                    },
+                    {
+                        "type": "item",
+                        "label": "Occupation",
+                        "href": "/apps/coustomers/Master/occupation"
+                    },
+                    {
+                        "type": "item",
+                        "label": "Marrital Status",
+                        "href": "/apps/coustomers/Master/marritalStatus"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "submenu",
+        "label": "Partner",
+        "iconComponent": "BsShop",
+        "permissions": [
+            "partner_all_partner:view",
+            "partner_all_partner:global_view",
+            "partner_update_partner:view",
+            "partner_all_partner:add",
+            "listing_listing_approval:view",
+            "partner_master:view",
+            "partner_packages:view",
+            "partner_packages_transaction:view"
+        ],
+        "children": [
+            {
+                "type": "item",
+                "label": "All Partner",
+                "href": "/apps/listing/all-listing",
+                "permissions": [
+                    "partner_all_partner:view",
+                    "partner_all_partner:global_view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Add Partner",
+                "href": "/apps/listing/add-listing",
+                "permissions": [
+                    "partner_all_partner:add"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Update Partner",
+                "href": "/apps/listing/update-listing",
+                "permissions": [
+                    "partner_update_partner:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Packages",
+                "href": "/apps/listing/packages",
+                "permissions": [
+                    "partner_packages:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Packages Transaction",
+                "href": "/apps/listing/packages/transaction",
+                "permissions": [
+                    "partner_packages_transaction:view"
+                ]
+            },
+            {
+                "type": "submenu",
+                "label": "Masters",
+                "permissions": [
+                    "partner_master:view"
+                ],
+                "children": [
+                    {
+                        "type": "submenu",
+                        "label": "Location",
+                        "children": [
+                            {
+                                "type": "item",
+                                "label": "Country List",
+                                "href": "/apps/listing/masters/location"
+                            },
+                            {
+                                "type": "item",
+                                "label": "State List",
+                                "href": "/apps/listing/masters/location/states"
+                            },
+                            {
+                                "type": "item",
+                                "label": "City List",
+                                "href": "/apps/listing/masters/location/cities"
+                            },
+                            {
+                                "type": "item",
+                                "label": "Area List",
+                                "href": "/apps/listing/masters/location/areas"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "submenu",
+                        "label": "Business Category",
+                        "children": [
+                            {
+                                "type": "item",
+                                "label": "Attribute",
+                                "href": "/apps/listing/service/attribute"
+                            },
+                            {
+                                "type": "item",
+                                "label": "Category",
+                                "href": "/apps/listing/service/category"
+                            },
+                            {
+                                "type": "item",
+                                "label": "User Category Setup",
+                                "href": "/apps/businessVisibiltyCategory"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Add Bank Details",
+                        "href": "/apps/bankDetails"
+                    },
+                    {
+                        "type": "item",
+                        "label": "Nature Of Business",
+                        "href": "/apps/listing/masters/business-nature"
+                    },
+                    {
+                        "type": "item",
+                        "label": "Home Banners",
+                        "href": "/apps/product1/home-banner"
+                    },
+                    {
+                        "type": "item",
+                        "label": "Business Legal Status",
+                        "href": "/apps/listing/masters/business-legal"
+                    },
+                    {
+                        "type": "item",
+                        "label": "KYC Document Type",
+                        "href": "/apps/listing/masters/document-kyc"
+                    },
+                    {
+                        "type": "item",
+                        "label": "Number Of Employee",
+                        "href": "/apps/listing/masters/number-of-employee"
+                    },
+                    {
+                        "type": "item",
+                        "label": "Banker Name",
+                        "href": "/apps/listing/masters/banker-name"
+                    },
+                    {
+                        "type": "item",
+                        "label": "Business GST Turnover",
+                        "href": "/apps/listing/masters/gst-turnover"
+                    },
+                    {
+                        "type": "item",
+                        "label": "Payment Option",
+                        "href": "/apps/payment"
+                    },
+                    {
+                        "type": "item",
+                        "label": "Brand Franchise",
+                        "icon": "tabler-brand-amazon",
+                        "href": "/apps/business-brand"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "item",
+        "label": "Partner Banners Setup",
+        "icon": "tabler-flag-3",
+        "href": "/apps/category-banner",
+        "permissions": [
+            "partner_banners_setup:view"
+        ]
+    },
+    {
+        "type": "submenu",
+        "label": "Partner Products",
+        "icon": "tabler-shopping-cart",
+        "permissions": [
+            "product_add_update:view",
+            "product_master:view"
+        ],
+        "children": [
+            {
+                "type": "submenu",
+                "label": "Master",
+                "permissions": [
+                    "product_master:view"
+                ],
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Category",
+                        "href": "/apps/product1/category"
+                    },
+                    {
+                        "type": "item",
+                        "label": "Attribute Set",
+                        "href": "/apps/product1/attribute-set"
+                    },
+                    {
+                        "type": "item",
+                        "label": "Attributes",
+                        "href": "/apps/product1/attribute"
+                    },
+                    {
+                        "type": "item",
+                        "label": "HSN Code",
+                        "href": "/apps/product1/hsn-code"
+                    },
+                    {
+                        "type": "item",
+                        "label": "Product Brand",
+                        "href": "/apps/product1/product-brand"
+                    }
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Add/Update Products",
+                "href": "/apps/product1/update-product"
+            }
+        ]
+    },
+    {
+        "type": "submenu",
+        "label": "Manage Approval",
+        "icon": "tabler-file-like",
+        "permissions": [
+            "approval_listing_approval:view",
+            "approval_image_approval:view",
+            "approval_product_approval:view",
+            "approval_review_approval:view"
+        ],
+        "children": [
+            {
+                "type": "item",
+                "label": "Partner Approval",
+                "href": "/apps/approval/listing-approval",
+                "permissions": [
+                    "approval_listing_approval:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Image Approval",
+                "href": "/apps/approval/image-approval",
+                "permissions": [
+                    "approval_image_approval:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Rating Approval",
+                "href": "/apps/approval/rating-approval",
+                "permissions": [
+                    "approval_review_approval:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Product Approval",
+                "href": "/apps/approval/product-approval",
+                "permissions": [
+                    "approval_product_approval:view"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "submenu",
+        "label": "Happening",
+        "icon": "tabler-social",
+        "permissions": [
+            "happening_post:view",
+            "happening_story:view",
+            "happening_polls:view",
+            "happening_manage:view",
+            "happening_post_approve:view",
+            "happening_story_approve:view",
+            "happening_polls_approve:view",
+            "happening_post_report:view",
+            "happening_comment_report:view",
+            "happening_polls_report:view"
+        ],
+        "children": [
+            {
+                "type": "submenu",
+                "label": "Posts",
+                "permissions": [
+                    "happening_post:view",
+                    "happening_story:view",
+                    "happening_polls:view",
+                    "happening_manage:view"
+                ],
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Post",
+                        "href": "/apps/posts/post-data",
+                        "permissions": [
+                            "happening_post:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Story",
+                        "href": "/apps/posts/post-story",
+                        "permissions": [
+                            "happening_story:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Polls",
+                        "href": "/apps/posts/polls-data",
+                        "permissions": [
+                            "happening_polls:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Manage Reactions",
+                        "href": "/apps/posts/reaction",
+                        "permissions": [
+                            "happening_manage:view"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "submenu",
+                "label": "Approval",
+                "permissions": [
+                    "happening_post_approve:view",
+                    "happening_story_approve:view",
+                    "happening_polls_approve:view"
+                ],
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Post Approval",
+                        "href": "/apps/posts/approvel/postapprovel",
+                        "permissions": [
+                            "happening_post_approve:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Story Approval",
+                        "href": "/apps/posts/approvel/storyapprovel",
+                        "permissions": [
+                            "happening_story_approve:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Polls Approval",
+                        "href": "/apps/posts/approvel/pollsapprovel",
+                        "permissions": [
+                            "happening_polls_approve:view"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "submenu",
+                "label": "Report",
+                "permissions": [
+                    "happening_post_report:view",
+                    "happening_comment_report:view",
+                    "happening_polls_report:view"
+                ],
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Reported Post",
+                        "href": "/apps/posts/reports/report-data",
+                        "permissions": [
+                            "happening_post_report:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Reported Comment",
+                        "href": "/apps/posts/reports/report-comment",
+                        "permissions": [
+                            "happening_comment_report:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Report Type",
+                        "href": "/apps/posts/reports/report-type",
+                        "permissions": [
+                            "happening_comment_report:view"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "submenu",
+        "label": "Spiritual",
+        "icon": "tabler-users",
+        "permissions": [
+            "spiritual_hinduism_manage_temple:view",
+            "spiritual_hinduism_manage_content:view",
+            "spiritual_hinduism_festival:view",
+            "spiritual_hinduism_live_darshan:view",
+            "spiritual_hinduism_setting:view",
+            "spiritual_islam_prayer_times:view",
+            "spiritual_islam_reciter_list:view",
+            "spiritual_islam_quran_chapters:view",
+            "spiritual_islam_dua:view",
+            "spiritual_islam_dua_category:view",
+            "spiritual_islam_dikhras:view",
+            "spiritual_islam_allah_name:view",
+            "spiritual_islam_setting:view",
+            "spiritual_islam_mosque:view",
+            "spiritual_sikh_manage_gurudwara:view",
+            "spiritual_buddha_manage_temple:view",
+            "spiritual_buddha_manage_content:view",
+            "spiritual_buddha_festival:view",
+            "spiritual_buddha_live_darshan:view",
+            "spiritual_buddha_setting:view",
+            "spiritual_jain_manage_temple:view",
+            "spiritual_jain_manage_content:view",
+            "spiritual_jain_festival:view",
+            "spiritual_jain_live_darshan:view",
+            "spiritual_jain_setting:view",
+            "spiritual_christ_manage_church:view",
+            "spiritual_christ_manage_content:view",
+            "spiritual_christ_festival:view",
+            "spiritual_christ_live_darshan:view",
+            "spiritual_christ_setting:view"
+        ],
+        "children": [
+            {
+                "type": "submenu",
+                "label": "Hinduism",
+                "permissions": [
+                    "spiritual_hinduism_manage_temple:view",
+                    "spiritual_hinduism_manage_content:view",
+                    "spiritual_hinduism_festival:view",
+                    "spiritual_hinduism_live_darshan:view",
+                    "spiritual_hinduism_setting:view"
+                ],
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Manage Temple",
+                        "href": "/apps/spritual/hinduism/manage",
+                        "permissions": [
+                            "spiritual_hinduism_manage_temple:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Manage Content",
+                        "href": "/apps/spritual/hinduism/content",
+                        "permissions": [
+                            "spiritual_hinduism_manage_content:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Festivals",
+                        "href": "/apps/spritual/hinduism/festival",
+                        "permissions": [
+                            "spiritual_hinduism_festival:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Live Darshan",
+                        "href": "/apps/spritual/hinduism/livedarshan",
+                        "permissions": [
+                            "spiritual_hinduism_live_darshan:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Setting",
+                        "href": "/apps/spritual/hinduism/setting",
+                        "permissions": [
+                            "spiritual_hinduism_setting:view"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "submenu",
+                "label": "Islam",
+                "permissions": [
+                    "spiritual_islam_prayer_times:view",
+                    "spiritual_islam_reciter_list:view",
+                    "spiritual_islam_quran_chapters:view",
+                    "spiritual_islam_dua:view",
+                    "spiritual_islam_dua_category:view",
+                    "spiritual_islam_dikhras:view",
+                    "spiritual_islam_allah_name:view",
+                    "spiritual_islam_setting:view",
+                    "spiritual_islam_mosque:view"
+                ],
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Prayer Times",
+                        "href": "/apps/spritual/islam/prayer",
+                        "permissions": [
+                            "spiritual_islam_prayer_times:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Reciter List",
+                        "href": "/apps/spritual/islam/reciter",
+                        "permissions": [
+                            "spiritual_islam_reciter_list:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Quran Chapters",
+                        "href": "/apps/spritual/islam/quran-chapter",
+                        "permissions": [
+                            "spiritual_islam_quran_chapters:view"
+                        ]
+                    },
+                    {
+                        "type": "submenu",
+                        "label": "Dua",
+                        "permissions": [
+                            "spiritual_islam_dua:view",
+                            "spiritual_islam_dua_category:view"
+                        ],
+                        "children": [
+                            {
+                                "type": "item",
+                                "label": "Dua",
+                                "href": "/apps/spritual/islam/dua",
+                                "permissions": [
+                                    "spiritual_islam_dua:view"
+                                ]
+                            },
+                            {
+                                "type": "item",
+                                "label": "Dua Category",
+                                "href": "/apps/spritual/islam/dua/category",
+                                "permissions": [
+                                    "spiritual_islam_dua_category:view"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Dikhra",
+                        "href": "/apps/spritual/islam/dikhras",
+                        "permissions": [
+                            "spiritual_islam_dikhras:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Allah Name",
+                        "href": "/apps/spritual/islam/allah-name",
+                        "permissions": [
+                            "spiritual_islam_allah_name:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Mosque",
+                        "href": "/apps/spritual/islam/mosque",
+                        "permissions": [
+                            "spiritual_islam_mosque:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Setting",
+                        "href": "/apps/spritual/islam/setting",
+                        "permissions": [
+                            "spiritual_islam_setting:view"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "submenu",
+                "label": "Sikhism",
+                "permissions": [
+                    "spiritual_sikh_manage_gurudwara:view",
+                    "spiritual_sikh_manage_content:view",
+                    "spiritual_sikh_festival:view",
+                    "spiritual_sikh_live_darshan:view",
+                    "spiritual_sikh_setting:view"
+                ],
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Manage Sikh",
+                        "href": "/apps/spritual/sikh/manage",
+                        "permissions": [
+                            "spiritual_sikh_manage_gurudwara:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Manage Content",
+                        "href": "/apps/spritual/sikh/content",
+                        "permissions": [
+                            "spiritual_sikh_manage_content:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Festivals",
+                        "href": "/apps/spritual/sikh/festival",
+                        "permissions": [
+                            "spiritual_sikh_festival:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Live Darshan",
+                        "href": "/apps/spritual/sikh/livedarshan",
+                        "permissions": [
+                            "spiritual_sikh_live_darshan:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Setting",
+                        "href": "/apps/spritual/sikh/setting",
+                        "permissions": [
+                            "spiritual_sikh_setting:view"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "submenu",
+                "label": "Jainism",
+                "permissions": [
+                    "spiritual_jain_manage_temple:view",
+                    "spiritual_jain_manage_content:view",
+                    "spiritual_jain_festival:view",
+                    "spiritual_jain_live_darshan:view",
+                    "spiritual_jain_setting:view"
+                ],
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Manage Jain",
+                        "href": "/apps/spritual/jain/manage",
+                        "permissions": [
+                            "spiritual_jain_manage_temple:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Manage Content",
+                        "href": "/apps/spritual/jain/content",
+                        "permissions": [
+                            "spiritual_jain_manage_content:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Festivals",
+                        "href": "/apps/spritual/jain/festival",
+                        "permissions": [
+                            "spiritual_jain_festival:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Live Darshan",
+                        "href": "/apps/spritual/jain/livedarshan",
+                        "permissions": [
+                            "spiritual_jain_live_darshan:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Setting",
+                        "href": "/apps/spritual/jain/setting",
+                        "permissions": [
+                            "spiritual_jain_setting:view"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "submenu",
+                "label": "Buddhism",
+                "permissions": [
+                    "spiritual_buddha_manage_temple:view",
+                    "spiritual_buddha_manage_content:view",
+                    "spiritual_buddha_festival:view",
+                    "spiritual_buddha_live_darshan:view",
+                    "spiritual_buddha_setting:view"
+                ],
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Manage Temple",
+                        "href": "/apps/spritual/buddha/manage",
+                        "permissions": [
+                            "spiritual_buddha_manage_temple:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Manage Content",
+                        "href": "/apps/spritual/buddha/content",
+                        "permissions": [
+                            "spiritual_buddha_manage_content:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Festivals",
+                        "href": "/apps/spritual/buddha/festival",
+                        "permissions": [
+                            "spiritual_buddha_festival:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Live Darshan",
+                        "href": "/apps/spritual/buddha/livedarshan",
+                        "permissions": [
+                            "spiritual_buddha_live_darshan:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Setting",
+                        "href": "/apps/spritual/buddha/setting",
+                        "permissions": [
+                            "spiritual_buddha_setting:view"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "submenu",
+                "label": "Christianity",
+                "permissions": [
+                    "spiritual_christ_manage_church:view",
+                    "spiritual_christ_manage_content:view",
+                    "spiritual_christ_festival:view",
+                    "spiritual_christ_live_darshan:view",
+                    "spiritual_christ_setting:view"
+                ],
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Manage Church",
+                        "href": "/apps/spritual/christ/manage",
+                        "permissions": [
+                            "spiritual_christ_manage_church:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Manage Content",
+                        "href": "/apps/spritual/christ/content",
+                        "permissions": [
+                            "spiritual_christ_manage_content:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Festivals",
+                        "href": "/apps/spritual/christ/festival",
+                        "permissions": [
+                            "spiritual_christ_festival:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Live Darshan",
+                        "href": "/apps/spritual/christ/livedarshan",
+                        "permissions": [
+                            "spiritual_christ_live_darshan:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Setting",
+                        "href": "/apps/spritual/christ/setting",
+                        "permissions": [
+                            "spiritual_christ_setting:view"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "submenu",
+        "label": "Event",
+        "iconComponent": "EventIcon",
+        "permissions": [
+            "event_masters:view",
+            "event_dashboard:view",
+            "event_event_booking:view",
+            "event_manageEvents:view",
+            "event_invoices:view",
+            "event_commission:view"
+        ],
+        "children": [
+            {
+                "type": "submenu",
+                "label": "Masters",
+                "permissions": [
+                    "event_masters:view"
+                ],
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Categories",
+                        "href": "/apps/event/masters/category",
+                        "permissions": [
+                            "event_masters:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Artist",
+                        "href": "/apps/event/masters/artist",
+                        "permissions": [
+                            "event_masters:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Local Artist",
+                        "href": "/apps/event/masters/localartist",
+                        "permissions": [
+                            "event_masters:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Language",
+                        "href": "/apps/event/masters/language",
+                        "permissions": [
+                            "event_masters:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Event Commission Setup",
+                        "href": "/apps/event/masters/commission",
+                        "permissions": [
+                            "event_masters:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Coupon",
+                        "href": "/apps/event/masters/coupon",
+                        "permissions": [
+                            "event_masters:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Home Banner",
+                        "href": "/apps/event/banner",
+                        "permissions": [
+                            "event_masters:view"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Scanner-App User",
+                "href": "/apps/event/vendor-user",
+                "permissions": [
+                    "event_scanner_app_user:view"
+                ]
+            },
+            {
+                "type": "submenu",
+                "label": "Manage Event",
+                "permissions": [
+                    "event_manageEvents:view"
+                ],
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Add Event",
+                        "href": "/apps/event/manageEvents/add",
+                        "permissions": [
+                            "event_manageEvents:add"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Manage Events",
+                        "href": "/apps/event/manageEvents",
+                        "permissions": [
+                            "event_manageEvents:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Booking Fees",
+                        "href": "/apps/event/commission",
+                        "permissions": [
+                            "event_commission:view"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Withdraw Requests",
+                "href": "/apps/event/withdraw_requests",
+                "permissions": [
+                    "event_withdraw_requests:view"
+                ]
+            },
+            {
+                "type": "submenu",
+                "label": "Event Approval",
+                "permissions": [
+                    "event_event_approval:view"
+                ],
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Approval",
+                        "href": "/apps/event/approval",
+                        "permissions": [
+                            "event_event_approval:view"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Console Event Report",
+                "href": "/apps/event/eventReport",
+                "permissions": [
+                    "event_event_report:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Invoice",
+                "href": "/apps/invoice/list",
+                "permissions": [
+                    "event_invoices:view"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "submenu",
+        "label": "Utsav",
+        "iconComponent": "TbTicket",
+        "permissions": [
+            "utsav_master:view",
+            "utsav_manage_utsav:view",
+            "utsav_vendor_wise_utsav:view",
+            "utsav_approval:view",
+            "utsav_banner:view",
+            "utsav_promotional_banner:view",
+            "utsav_issue_report:view"
+        ],
+        "children": [
+            {
+                "type": "item",
+                "label": "Master",
+                "href": "/apps/utsav/master",
+                "permissions": [
+                    "utsav_master:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Manage Utsav",
+                "href": "/apps/utsav/managecoupon",
+                "permissions": [
+                    "utsav_manage_utsav:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Vendor Wise Utsav",
+                "href": "/apps/utsav/vendorwisecoupon",
+                "permissions": [
+                    "utsav_vendor_wise_utsav:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Approval",
+                "href": "/apps/utsav/approval",
+                "permissions": [
+                    "utsav_approval:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Utsav Report",
+                "href": "/apps/utsav/issueReport",
+                "permissions": [
+                    "utsav_issue_report:view"
+                ]
+            },
+            {
+                "type": "submenu",
+                "label": "Banners",
+                "permissions": [
+                    "utsav_banner:view",
+                    "utsav_promotional_banner:view"
+                ],
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Home Banner",
+                        "href": "/apps/utsav/banner",
+                        "permissions": [
+                            "utsav_banner:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Promotional Banner",
+                        "href": "/apps/utsav/banner/promotional",
+                        "permissions": [
+                            "utsav_promotional_banner:view"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "submenu",
+        "label": "Quiz",
+        "iconComponent": "FileQuestion",
+        "permissions": [
+            "quiz_quiz_zone:view",
+            "quiz_dailyquiz:view",
+            "quiz_contest:view",
+            "quiz_funAndLearn:view",
+            "quiz_guesstheword:view",
+            "quiz_trueAndFalse:view",
+            "quiz_leaderboard:view",
+            "quiz_coin_plan:view",
+            "quiz_notification:view",
+            "quiz_user_details:view",
+            "quiz_in_app_purchase:view",
+            "quiz_activity_tracker:view"
+        ],
+        "children": [
+            {
+                "type": "item",
+                "label": "Quiz Type",
+                "href": "/apps/quiz/quiztype",
+                "permissions": [
+                    "quiz_quiz_type:view"
+                ]
+            },
+            {
+                "type": "submenu",
+                "label": "Quiz Zone",
+                "iconComponent": "BookOpenCheck",
+                "permissions": [
+                    "quiz_quiz_zone:view"
+                ],
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Category",
+                        "href": "/apps/quiz/quizzone",
+                        "permissions": [
+                            "quiz_quiz_zone:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Sub Category",
+                        "href": "/apps/quiz/quizzone/subCategory",
+                        "permissions": [
+                            "quiz_quiz_zone:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Manage Level",
+                        "href": "/apps/quiz/quizzone/managelevel",
+                        "permissions": [
+                            "quiz_quiz_zone:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Question Report",
+                        "href": "/apps/quiz/quizzone/question/report",
+                        "permissions": [
+                            "quiz_quiz_zone:view"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Daily Quiz",
+                "href": "/apps/quiz/dailyquiz",
+                "permissions": [
+                    "quiz_dailyquiz:view"
+                ]
+            },
+            {
+                "type": "submenu",
+                "label": "Contest",
+                "iconComponent": "Trophy",
+                "permissions": [
+                    "quiz_contest:view"
+                ],
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Manage Contest",
+                        "href": "/apps/quiz/contest",
+                        "permissions": [
+                            "quiz_contest:view"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "submenu",
+                "label": "Fun And Learn",
+                "iconComponent": "BrainCircuit",
+                "permissions": [
+                    "quiz_funAndLearn:view"
+                ],
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Category",
+                        "href": "/apps/quiz/funAndLearn",
+                        "permissions": [
+                            "quiz_funAndLearn:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Sub Category",
+                        "href": "/apps/quiz/funAndLearn/SubCategory",
+                        "permissions": [
+                            "quiz_funAndLearn:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Manage Level",
+                        "href": "/apps/quiz/funAndLearn/managelevel",
+                        "permissions": [
+                            "quiz_funAndLearn:view"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "submenu",
+                "label": "Guess The Word",
+                "iconComponent": "Puzzle",
+                "permissions": [
+                    "quiz_guesstheword:view"
+                ],
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Category",
+                        "href": "/apps/quiz/guesetheword",
+                        "permissions": [
+                            "quiz_guesstheword:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Sub Category",
+                        "href": "/apps/quiz/guesetheword/subCategory",
+                        "permissions": [
+                            "quiz_guesstheword:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Manage Level",
+                        "href": "/apps/quiz/guesetheword/managelevel",
+                        "permissions": [
+                            "quiz_guesstheword:view"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "submenu",
+                "label": "True And False",
+                "iconComponent": "CheckCircle",
+                "permissions": [
+                    "quiz_trueAndFalse:view"
+                ],
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Category",
+                        "href": "/apps/quiz/trueAndFalse",
+                        "permissions": [
+                            "quiz_trueAndFalse:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Sub Category",
+                        "href": "/apps/quiz/trueAndFalse/subCategory",
+                        "permissions": [
+                            "quiz_trueAndFalse:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Manage Level",
+                        "href": "/apps/quiz/trueAndFalse/managelevel",
+                        "permissions": [
+                            "quiz_trueAndFalse:view"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "submenu",
+                "label": "Leaderboard",
+                "iconComponent": "BarChart2",
+                "permissions": [
+                    "quiz_leaderboard:view"
+                ],
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Leaderboard All",
+                        "href": "/apps/quiz/leaderboard",
+                        "permissions": [
+                            "quiz_leaderboard:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Leaderboard Daily",
+                        "href": "/apps/quiz/leaderboard/daily",
+                        "permissions": [
+                            "quiz_leaderboard:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Leaderboard Monthly",
+                        "href": "/apps/quiz/leaderboard/monthly",
+                        "permissions": [
+                            "quiz_leaderboard:view"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Coin Plan",
+                "href": "/apps/quiz/coinplan",
+                "permissions": [
+                    "quiz_coin_plan:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Send Notification",
+                "href": "/apps/quiz/notification",
+                "permissions": [
+                    "quiz_notification:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "User Details",
+                "href": "/apps/quiz/userdetails",
+                "permissions": [
+                    "quiz_user_details:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Coin Order",
+                "href": "/apps/quiz/inappurchase",
+                "permissions": [
+                    "quiz_in_app_purchase:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Activity Tracker",
+                "href": "/apps/quiz/activitytracker",
+                "permissions": [
+                    "quiz_activity_tracker:view"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "submenu",
+        "label": "Premium Listing",
+        "iconComponent": "GoRocket",
+        "permissions": [
+            "premium_paid_master:view",
+            "premium_paid_listing:view",
+            "premium_fixed_listing:view",
+            "premium_fixed_master:view",
+            "premium_banner_listing:view",
+            "premium_banner_master:view",
+            "premium_proposal:view",
+            "premium_invoice:view",
+            "premium_approval:view"
+        ],
+        "children": [
+            {
+                "type": "submenu",
+                "label": "Paid Listing",
+                "permissions": [
+                    "premium_paid_master:view",
+                    "premium_paid_listing:view"
+                ],
+                "children": [
+                    {
+                        "type": "submenu",
+                        "label": "Master",
+                        "permissions": [
+                            "premium_paid_master:view"
+                        ],
+                        "children": [
+                            {
+                                "type": "item",
+                                "label": "Paid Package",
+                                "href": "/apps/premium-listing/paid-listing/add-package",
+                                "permissions": [
+                                    "premium_paid_master:view"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "All Paid Listings",
+                        "href": "/apps/premium-listing/paid-listing/add-paid-listing",
+                        "permissions": [
+                            "premium_paid_listing:view"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "submenu",
+                "label": "Fixed Listing",
+                "permissions": [
+                    "premium_fixed_listing:view",
+                    "premium_fixed_master:view"
+                ],
+                "children": [
+                    {
+                        "type": "submenu",
+                        "label": "Master",
+                        "permissions": [
+                            "premium_fixed_master:view"
+                        ],
+                        "children": [
+                            {
+                                "type": "item",
+                                "label": "Fixed Package",
+                                "href": "/apps/premium-listing/fixed-listing/add-package",
+                                "permissions": [
+                                    "premium_fixed_master:view"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "All Fixed Listings",
+                        "href": "/apps/premium-listing/fixed-listing/add-fixed-listing",
+                        "permissions": [
+                            "premium_fixed_listing:view"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "submenu",
+                "label": "Banner Listing",
+                "permissions": [
+                    "premium_banner_listing:view",
+                    "premium_banner_master:view"
+                ],
+                "children": [
+                    {
+                        "type": "submenu",
+                        "label": "Master",
+                        "permissions": [
+                            "premium_banner_master:view"
+                        ],
+                        "children": [
+                            {
+                                "type": "item",
+                                "label": "Banner Package",
+                                "href": "/apps/premium-listing/banner-listing/add-package",
+                                "permissions": [
+                                    "premium_banner_master:view"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "All Banners Listings",
+                        "href": "/apps/premium-listing/banner-listing/add-banner",
+                        "permissions": [
+                            "premium_banner_listing:view"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "submenu",
+                "label": "Invoice/Proposal",
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Proposal List",
+                        "href": "/apps/listingInvoice/list",
+                        "permissions": [
+                            "premium_proposal:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Invoice List",
+                        "href": "/apps/listingInvoice/invoice-list",
+                        "permissions": [
+                            "premium_invoice:view"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Approvel",
+                "href": "/apps/premium-listing/approvel",
+                "permissions": [
+                    "premium_approval:view"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "submenu",
+        "label": "Leave Management",
+        "icon": "tabler-calendar-week",
+        "permissions": [
+            "leave management_master:view",
+            "leave management_leaveSetup:view",
+            "leave management_report:view",
+            "leave management_leaveApplication:view",
+            "leave management_manageHoliday:view"
+        ],
+        "children": [
+            {
+                "type": "submenu",
+                "label": "Set Up",
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Leave Type",
+                        "href": "/apps/leave-management/master",
+                        "permissions": [
+                            "leave management_master:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Leave Setup",
+                        "href": "/apps/leave-management/leave-setup",
+                        "permissions": [
+                            "leave management_leaveSetup:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Manage Holiday",
+                        "href": "/apps/leave-management/manage-holiday",
+                        "permissions": [
+                            "leave management_manageHoliday:view"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "submenu",
+                "label": "Leave Application",
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Apply Leave",
+                        "href": "/apps/leave-management/apply-for-leave",
+                        "permissions": [
+                            "leave management_leaveApplication:view"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "submenu",
+                "label": "Report",
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Leave Opening Details",
+                        "href": "/apps/leave-management/leave-opening-details",
+                        "permissions": [
+                            "leave management_report:view"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "submenu",
+        "label": "Core HR",
+        "icon": "tabler-user-check",
+        "permissions": [
+            "core HR_master:view",
+            "core HR_award:view",
+            "core HR_complaints:view",
+            "core HR_warning:view"
+        ],
+        "children": [
+            {
+                "type": "item",
+                "label": "Master",
+                "href": "/apps/core-hr/master",
+                "permissions": [
+                    "core HR_master:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Award",
+                "href": "/apps/core-hr/award",
+                "permissions": [
+                    "core HR_award:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Complaints",
+                "href": "/apps/core-hr/complain",
+                "permissions": [
+                    "core HR_complaints:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Warning",
+                "href": "/apps/core-hr/warning",
+                "permissions": [
+                    "core HR_warning:view"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "submenu",
+        "label": "Payroll",
+        "icon": "tabler-wallet",
+        "permissions": [
+            "payroll_earning:view",
+            "payroll_deduction:view",
+            "payroll_reimbursement:view",
+            "payroll_salarySetup:view",
+            "payroll_generateSalary:view",
+            "payroll_paymentHistory:view"
+        ],
+        "children": [
+            {
+                "type": "submenu",
+                "label": "Salary Components",
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Earning",
+                        "href": "/apps/payroll/salary-components/earning",
+                        "permissions": [
+                            "payroll_earning:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Deduction",
+                        "href": "/apps/payroll/salary-components/deduction",
+                        "permissions": [
+                            "payroll_deduction:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Reimbursement",
+                        "href": "/apps/payroll/salary-components/reimbursement",
+                        "permissions": [
+                            "payroll_reimbursement:view"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Salary Setup",
+                "href": "/apps/payroll/salary-setup",
+                "permissions": [
+                    "payroll_salarySetup:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Generate Salary",
+                "href": "/apps/payroll/generate-salary",
+                "permissions": [
+                    "payroll_generateSalary:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Payment History",
+                "href": "/apps/payroll/payment-history",
+                "permissions": [
+                    "payroll_paymentHistory:view"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "submenu",
+        "label": "Business Enquiry",
+        "iconComponent": "BsChatRightDots",
+        "permissions": [
+            "enquiry_all_enquiry:view",
+            "enquiry_enq_distribution:view",
+            "enquiry_conf_distribution:view"
+        ],
+        "children": [
+            {
+                "type": "item",
+                "label": "All Enquiries",
+                "href": "/apps/enquiry",
+                "permissions": [
+                    "enquiry_all_enquiry:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Enquiry Distribution",
+                "href": "#",
+                "permissions": [
+                    "enquiry_enq_distribution:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Distribution Config",
+                "href": "#",
+                "permissions": [
+                    "enquiry_conf_distribution:view"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "submenu",
+        "label": "Business Rating",
+        "icon": "tabler-stars",
+        "permissions": [
+            "business_rating:view"
+        ],
+        "children": [
+            {
+                "type": "item",
+                "label": "All Rating",
+                "href": "/apps/rating"
+            }
+        ]
+    },
+    {
+        "type": "submenu",
+        "label": "Follow Up",
+        "iconComponent": "RiChatFollowUpLine",
+        "permissions": [
+            "follow_up_master:view",
+            "follow_up_team:view",
+            "follow_up_meeting:view",
+            "follow_up_call:view",
+            "follow_up_call:global_view",
+            "follow_up_meeting:global_view"
+        ],
+        "children": [
+            {
+                "type": "item",
+                "label": "Master",
+                "href": "/apps/followup/master",
+                "permissions": [
+                    "follow_up_master:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "All Teams",
+                "href": "/apps/followup/teams",
+                "permissions": [
+                    "follow_up_team:view",
+                    "follow_up_team:global_view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "All Meetings",
+                "href": "/apps/followup/all-meetings",
+                "employeeSuffix": true,
+                "activeUrlBase": [
+                    "/apps/followup/all-meetings",
+                    "/apps/followup/create"
+                ],
+                "permissions": [
+                    "follow_up_meeting:view",
+                    "follow_up_meeting:global_view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Scheduled Meetings",
+                "href": "/apps/followup/scheduled",
+                "employeeSuffix": true,
+                "activeUrlBase": [
+                    "/apps/followup/scheduled"
+                ],
+                "permissions": [
+                    "follow_up_meeting:view",
+                    "follow_up_meeting:global_view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "All Calls",
+                "href": "/apps/followup/all-calls",
+                "employeeSuffix": true,
+                "activeUrlBase": [
+                    "/apps/followup/all-calls",
+                    "/apps/followup/create-call",
+                    "/apps/followup/scheduled/edit/"
+                ],
+                "activeUrlContains": [
+                    "/apps/followup/scheduled/edit/"
+                ],
+                "permissions": [
+                    "follow_up_call:view",
+                    "follow_up_call:global_view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Scheduled Calls",
+                "href": "/apps/followup/scheduled-calls",
+                "employeeSuffix": true,
+                "activeUrlBase": [
+                    "/apps/followup/scheduled-calls",
+                    "/apps/followup/scheduled-calls/edit/"
+                ],
+                "activeUrlContains": [
+                    "/apps/followup/scheduled-calls/edit/"
+                ],
+                "permissions": [
+                    "follow_up_call:view",
+                    "follow_up_call:global_view"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "submenu",
+        "label": "Employee",
+        "icon": "tabler-user-check",
+        "permissions": [
+            "employees_master:view",
+            "employees_all_employees:view"
+        ],
+        "children": [
+            {
+                "type": "item",
+                "label": "Master",
+                "href": "/apps/employee/master",
+                "permissions": [
+                    "employees_master:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "All Employees",
+                "href": "/apps/employee/all-employees",
+                "permissions": [
+                    "employees_all_employees:view"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "submenu",
+        "label": "Attendance",
+        "icon": "tabler-calendar",
+        "children": [
+            {
+                "type": "submenu",
+                "label": "Master",
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Working Shift",
+                        "href": "/apps/attendance/office-shift",
+                        "permissions": [
+                            "attendance_master_shift:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Late Configuration",
+                        "href": "/apps/attendance/late-config",
+                        "permissions": [
+                            "attendance_master_config:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Office Policy",
+                        "href": "/apps/attendance/office-policy",
+                        "permissions": [
+                            "attendance_master_office_policy:view"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "submenu",
+                "label": "Report",
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Daily Attendance",
+                        "href": "/apps/attendance/daily-attendance",
+                        "permissions": [
+                            "attendance_daily_Attendance:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Monthly Attendance",
+                        "href": "/apps/attendance/month-attendance",
+                        "permissions": [
+                            "attendance_monthly_Attendance:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "My Attendance",
+                        "href": "/apps/attendance/my-attendance",
+                        "permissions": [
+                            "attendance_my_Attendance:view"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Attendance",
+                "href": "/apps/attendance/attendance-entry",
+                "permissions": [
+                    "attendance_attendance_filter:view"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "submenu",
+        "label": "Utsav Package",
+        "icon": "tabler-package",
+        "permissions": [
+            "utsav_package_voucher_type_list:view",
+            "utsav_package_faqs:view",
+            "utsav_package_utsav_packages_list:view",
+            "utsav_package_discount_List:view",
+            "utsav_package_All_orders:view",
+            "utsav_package_members_list:view"
+        ],
+        "children": [
+            {
+                "type": "item",
+                "label": "Utsav Package List",
+                "href": "/apps/utsav-package/utsav-packages",
+                "activeUrlBase": [
+                    "/apps/utsav-package/utsav-packages",
+                    "/apps/utsav-package/add-new"
+                ],
+                "permissions": [
+                    "utsav_package_utsav_packages_list:view"
+                    
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Master",
+                "href": "/apps/utsav-package/master",
+                "permissions": [
+                    "utsav_package_master:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Discount List",
+                "href": "/apps/utsav-package/discount-code",
+                "activeUrlBase": [
+                    "/apps/utsav-package/discount-code",
+                    "/apps/utsav-package/create-discount"
+                ],
+                "permissions": [
+                    "utsav_package_discount_List:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "All Orders",
+                "href": "/apps/utsav-package/all-order",
+                "activeUrlBase": [
+                    "/apps/utsav-package/all-order",
+                    "/apps/utsav-package/create-order"
+                ],
+                "permissions": [
+                    "utsav_package_All_orders:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "interested List",
+                "href": "/apps/utsav-intrested",
+                "permissions": [
+                    "utsav_package_All_orders:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Members List",
+                "href": "/apps/utsav-package/members-list",
+                "permissions": [
+                    "utsav_package_members_list:view"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "submenu",
+        "label": "Customer Care",
+        "icon": "tabler-headset",
+        "permissions": [
+            "customer_care_ticket_predefined_reply:view",
+            "customer_care_ticket_all_tickets:view"
+        ],
+        "children": [
+            {
+                "type": "item",
+                "label": "Predefined Reply",
+                "href": "/apps/custmore-tickets/predifiend-reply",
+                "activeUrlBase": [
+                    "/apps/custmore-tickets/predifiend-reply",
+                    "/apps/custmore-tickets/pre-definend"
+                ],
+                "permissions": [
+                    "customer_care_ticket_predefined_reply:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "All Ticket",
+                "href": "/apps/custmore-tickets/tickets-card",
+                "activeUrlBase": [
+                    "/apps/custmore-tickets/tickets-card",
+                    "/apps/custmore-tickets/new-ticket"
+                ],
+                "permissions": [
+                    "customer_care_ticket_all_tickets:view"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "submenu",
+        "label": "Blog",
+        "icon": "tabler-notes",
+        "permissions": [
+            "blog_master:view",
+            "blog_all_blogs:view",
+            "blog_approve:view"
+        ],
+        "children": [
+            {
+                "type": "submenu",
+                "label": "Master",
+                "permissions": [
+                    "blog_master:view"
+                ],
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Category",
+                        "href": "/apps/blogs/category",
+                        "permissions": [
+                            "blog_master:view"
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "label": "Tag",
+                        "href": "/apps/blogs/masters",
+                        "permissions": [
+                            "blog_master:view"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Blog List",
+                "href": "/apps/blogs/blog-list",
+                "activeUrlBase": [
+                    "/apps/blogs/blog-list",
+                    "/apps/blogs/add-blog"
+                ],
+                "permissions": [
+                    "blog_all_blogs:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Blog Approval",
+                "href": "/apps/blogs/approve-blogs",
+                "permissions": [
+                    "blog_approve:view"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "submenu",
+        "label": "Live Meetings",
+        "icon": "tabler-video",
+        "permissions": [
+            "live_meeting_all_meetings:view"
+        ],
+        "children": [
+            {
+                "type": "item",
+                "label": "Live Metting",
+                "href": "/apps/live-meeting",
+                "permissions": [
+                    "live_meeting_all_meetings:view"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "submenu",
+        "label": "Goal Manage",
+        "iconComponent": "TrackChangesIcon",
+        "permissions": [
+            "performance_goal:view"
+        ],
+        "children": [
+            {
+                "type": "item",
+                "label": "Goal Manage List",
+                "href": "/apps/goal/manage-goal",
+                "activeUrlBase": [
+                    "/apps/goal/manage-goal",
+                    "/apps/goal/add-goal"
+                ],
+                "permissions": [
+                    "performance_goal:view"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "item",
+        "label": "Calendar",
+        "iconComponent": "TbCalendar",
+        "href": "/apps/calendar",
+        "permissions": [
+            "event_calendar_calendar:view"
+        ]
+    },
+    {
+        "type": "submenu",
+        "label": "Bug",
+        "icon": "tabler-bug",
+        "permissions": [
+            "bug_all_bugs:view",
+            "bug_category:view"
+        ],
+        "children": [
+            {
+                "type": "item",
+                "label": "Bug List",
+                "href": "/apps/bug/list",
+                "permissions": [
+                    "bug_all_bugs:view"
+                ]
+            },
+            {
+                "type": "item",
+                "label": "Bug Category",
+                "href": "/apps/bug/category",
+                "permissions": [
+                    "bug_category:view"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "item",
+        "label": "Todo",
+        "icon": "tabler-checklist",
+        "href": "/apps/todo",
+        "permissions": [
+            "todos_all_todo:view"
+        ],
+        "exactMatch": false,
+        "activeUrlBase": [
+            "/apps/todo"
+        ]
+    },
+    {
+        "type": "item",
+        "label": "Announcement",
+        "iconComponent": "TbSpeakerphone",
+        "href": "/apps/announce",
+        "permissions": [
+            "announce:view"
+        ]
+    },
+    {
+        "type": "item",
+        "label": "Keywords Analytics",
+        "icon": "tabler-tags",
+        "href": "/apps/keywords/manage-keyword",
+        "permissions": [
+            "keywords_manage:view"
+        ]
+    },
+  
+    {
+        "type": "item",
+        "label": "Newsletter",
+        "iconComponent": "TbMail",
+        "href": "/apps/news",
+        "permissions": [
+            "newsletter:view"
+        ]
+    },
+    {
+        "type": "item",
+        "label": "Email",
+        "iconComponent": "TbMail",
+        "href": "/apps/mail",
+        "permissions": [
+            "mail:view"
+        ]
+    },
+    {
+        "type": "item",
+        "label": "Role and Permission",
+        "icon": "tabler-checklist",
+        "href": "/apps/role",
+        "permissions": [
+            "role:view"
+        ],
+        "exactMatch": false,
+        "activeUrlBase": [
+            "/apps/role"
+        ]
+    },
+    {
+        "type": "submenu",
+        "label": "Settings",
+        "icon": "tabler-settings",
+        "children": [
+            {
+                "type": "item",
+                "label": "System Settings",
+                "href": "/apps/setting"
+            },
+            {
+                "type": "submenu",
+                "label": "Settings Master",
+                "children": [
+                    {
+                        "type": "item",
+                        "label": "Add GST",
+                        "href": "/apps/setting/master/gst-master"
+                    }
+                ]
+            }
+        ]
+    }
+]

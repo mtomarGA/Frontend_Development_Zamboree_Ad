@@ -1,0 +1,257 @@
+export const db = {
+  products: [
+    {
+      userId: 1,
+      userName: 'xyzpqr',
+      email: 'abc@gmail.com',
+      mobile: '+91 9889898764',
+      source: 'user',
+      createdAt: '02/04/2025',
+      lastActive: '02/04/2025',
+      status: 'Inactive',
+      productBrand: 'Super Retina XDR display footnote Pro Motion technology'
+    },
+    {
+      userId: 2,
+      userName: 'xyz',
+      email: 'abc@gmail.com',
+      mobile: '+91 9889898764',
+      source: 'user',
+      createdAt: '02/04/2025',
+      lastActive: '02/04/2025',
+      status: 'Active',
+      productBrand: 'Super Retina XDR display footnote Pro Motion technology'
+    },
+    {
+      userId: 3,
+      userName: 'xyz',
+      email: 'abc@gmail.com',
+      mobile: '+91 9889898764',
+      source: 'user',
+      createdAt: '02/04/2025',
+      lastActive: '02/04/2025',
+      status: 'Active',
+      productBrand: 'Super Retina XDR display footnote Pro Motion technology'
+    },
+    {
+      userId: 4,
+      userName: 'xyz',
+      email: 'abc@gmail.com',
+      mobile: '+91 9889898764',
+      source: 'user',
+      createdAt: '02/04/2025',
+      lastActive: '02/04/2025',
+      status: 'Inactive',
+      productBrand: 'Super Retina XDR display footnote Pro Motion technology'
+    },
+    {
+      userId: 5,
+      userName: 'xyz',
+      email: 'abc@gmail.com',
+      mobile: '+91 9889898764',
+      source: 'Admin',
+      createdAt: '02/04/2025',
+      lastActive: '02/04/2025',
+      status: 'Active',
+      productBrand: 'Super Retina XDR display footnote Pro Motion technology'
+    },
+    {
+      userId: 6,
+      userName: 'xyz',
+      email: 'abc@gmail.com',
+      mobile: '+91 9889898764',
+      source: 'user',
+      createdAt: '02/04/2025',
+      lastActive: '02/04/2025',
+      status: 'Inactive',
+      productBrand: 'Super Retina XDR display footnote Pro Motion technology'
+    },
+    {
+      userId: 7,
+      userName: 'xyz',
+      email: 'abc@gmail.com',
+      mobile: '+91 9889898764',
+      source: 'user',
+      createdAt: '02/04/2025',
+      lastActive: '02/04/2025',
+      status: 'Active',
+      productBrand: 'Super Retina XDR display footnote Pro Motion technology'
+    },
+    {
+      userId: 8,
+      userName: 'xyz',
+      email: 'abc@gmail.com',
+      mobile: '+91 9889898764',
+      source: 'user',
+      createdAt: '02/04/2025',
+      lastActive: '02/04/2025',
+      status: 'Active',
+      productBrand: 'Super Retina XDR display footnote Pro Motion technology'
+    },
+    {
+      userId: 9,
+      userName: 'xyz',
+      email: 'abc@gmail.com',
+      mobile: '+91 9889898764',
+      source: 'user',
+      createdAt: '02/04/2025',
+      lastActive: '02/04/2025',
+      status: 'Inactive',
+      productBrand: 'Super Retina XDR display footnote Pro Motion technology'
+    },
+    {
+      userId: 10,
+      userName: 'xyz',
+      email: 'abc@gmail.com',
+      mobile: '+91 9889898764',
+      source: 'user',
+      createdAt: '02/04/2025',
+      lastActive: '02/04/2025',
+      status: 'Inactive',
+      productBrand: 'Super Retina XDR display footnote Pro Motion technology'
+    },
+    {
+      userId: 11,
+      userName: 'xyz',
+      email: 'abc@gmail.com',
+      mobile: '+91 9889898764',
+      source: 'user',
+      createdAt: '02/04/2025',
+      lastActive: '02/04/2025',
+      status: 'Inactive',
+      productBrand: 'Super Retina XDR display footnote Pro Motion technology'
+    },
+    {
+      userId: 12,
+      userName: 'xyz',
+      email: 'abc@gmail.com',
+      mobile: '+91 9889898764',
+      source: 'user',
+      createdAt: '02/04/2025',
+      lastActive: '02/04/2025',
+      status: 'Active',
+      productBrand: 'Super Retina XDR display footnote Pro Motion technology'
+    },
+    {
+      userId: 13,
+      userName: 'xyz',
+      email: 'abc@gmail.com',
+      mobile: '+91 9889898764',
+      source: 'user',
+      createdAt: '02/04/2025',
+      lastActive: '02/04/2025',
+      status: 'Inactive',
+      productBrand: 'Super Retina XDR display footnote Pro Motion technology'
+    },
+    {
+      userId: 14,
+      userName: 'xyz',
+      email: 'abc@gmail.com',
+      mobile: '+91 9889898764',
+      source: 'user',
+      createdAt: '02/04/2025',
+      lastActive: '02/04/2025',
+      status: 'Inactive',
+      productBrand: 'Super Retina XDR display footnote Pro Motion technology'
+    },
+    {
+      userId: 15,
+      userName: 'xyz',
+      email: 'abc@gmail.com',
+      mobile: '+91 9889898764',
+      source: 'user',
+      createdAt: '02/04/2025',
+      lastActive: '02/04/2025',
+      status: 'Active',
+      productBrand: 'Super Retina XDR display footnote Pro Motion technology'
+    },
+    {
+      userId: 16,
+      userName: 'xyz',
+      email: 'abc@gmail.com',
+      mobile: '+91 9889898764',
+      source: 'user',
+      createdAt: '02/04/2025',
+      lastActive: '02/04/2025',
+      status: 'Inactive',
+      productBrand: 'Super Retina XDR display footnote Pro Motion technology'
+    },
+    {
+      userId: 17,
+      userName: 'xyz',
+      email: 'abc@gmail.com',
+      mobile: '+91 9889898764',
+      source: 'user',
+      createdAt: '02/04/2025',
+      lastActive: '02/04/2025',
+      status: 'Inactive',
+      productBrand: 'Super Retina XDR display footnote Pro Motion technology'
+    },
+    {
+      userId: 18,
+      userName: 'xyz',
+      email: 'abc@gmail.com',
+      mobile: '+91 9889898764',
+      source: 'user',
+      createdAt: '02/04/2025',
+      lastActive: '02/04/2025',
+      status: 'Active',
+      productBrand: 'Super Retina XDR display footnote Pro Motion technology'
+    },
+    {
+      userId: 19,
+      userName: 'xyz',
+      email: 'abc@gmail.com',
+      mobile: '+91 9889898764',
+      source: 'user',
+      createdAt: '02/04/2025',
+      lastActive: '02/04/2025',
+      status: 'Inactive',
+      productBrand: 'Super Retina XDR display footnote Pro Motion technology'
+    },
+    {
+      userId: 20,
+      userName: 'xyz',
+      email: 'abc@gmail.com',
+      mobile: '+91 9889898764',
+      source: 'user',
+      createdAt: '02/04/2025',
+      lastActive: '02/04/2025',
+      status: 'Inactive',
+      productBrand: 'Super Retina XDR display footnote Pro Motion technology'
+    },
+    {
+      userId: 21,
+      userName: 'xyz',
+      email: 'abc@gmail.com',
+      mobile: '+91 9889898764',
+      source: 'user',
+      createdAt: '02/04/2025',
+      lastActive: '02/04/2025',
+      status: 'Inactive',
+      productBrand: 'Super Retina XDR display footnote Pro Motion technology'
+    },
+    {
+      userId: 22,
+      userName: 'xyz',
+      email: 'abc@gmail.com',
+      mobile: '+91 9889898764',
+      source: 'user',
+      createdAt: '02/04/2025',
+      lastActive: '02/04/2025',
+      status: 'Inactive',
+      productBrand: 'Super Retina XDR display footnote Pro Motion technology'
+    },
+    {
+      userId: 23,
+      userName: 'xyz',
+      email: 'abc@gmail.com',
+      mobile: '+91 9889898764',
+      source: 'user',
+      createdAt: '02/04/2025',
+      lastActive: '02/04/2025',
+      status: 'Active',
+      productBrand: 'Super Retina XDR display footnote Pro Motion technology'
+    },
+  ]
+}
