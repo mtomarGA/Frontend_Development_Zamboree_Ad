@@ -20,6 +20,7 @@ jobs:
           export PATH=/home/develop_admin_vm/.nvm/versions/node/v24.13.0/bin:$PATH
           echo "PATH=$PATH" >> $GITHUB_ENV
 
+          
       # 3️⃣ Sync code to VM app folder
       - name: Sync code to /var/www/nextapp
         run: |
