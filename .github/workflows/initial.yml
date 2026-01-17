@@ -14,38 +14,40 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # 2️⃣ Set Node/NPM PATH from NVM
+      # 2️⃣ Set Node PATH (NVM)
       - name: Set Node PATH
         run: |
           export PATH=/home/develop_admin_vm/.nvm/versions/node/v24.13.0/bin:$PATH
           echo "PATH=$PATH" >> $GITHUB_ENV
 
-          
-      # 3️⃣ Sync code to VM app folder
+      # 3️⃣ Sync code (DO NOT delete env file)
       - name: Sync code to /var/www/nextapp
         run: |
-          rsync -av --delete ./ /var/www/nextapp/
+          rsync -av --delete \
+            --exclude='.env.production' \
+            ./ /var/www/nextapp/
 
-      # 4️⃣ Clean old build & node modules
-      - name: Clean & Install Dependencies
+      # 4️⃣ Install dependencies
+      - name: Install Dependencies
         run: |
           cd /var/www/nextapp
-          rm -rf node_modules package-lock.json .next
+          rm -rf node_modules .next
           npm install --legacy-peer-deps
 
-      # 5️⃣ Build Next.js production
+      # 5️⃣ Build Next.js
       - name: Build Next.js
         run: |
           cd /var/www/nextapp
           npm run build
 
-      # 6️⃣ Start or Restart app with PM2 and load .env
-      - name: Start/Restart PM2
+      # 6️⃣ Restart app with PM2 (PORT 3001)
+      - name: Restart PM2 App
         run: |
           cd /var/www/nextapp
           pm2 delete nextapp || true
-          pm2 start npm --name nextapp -- start --update-env
+          PORT=3001 pm2 start npm --name nextapp -- start
+          pm2 save
 
-      # 7️⃣ Show PM2 status
+      # 7️⃣ PM2 Status
       - name: PM2 status
-        run: pm2 ls
+        run: pm2 list
