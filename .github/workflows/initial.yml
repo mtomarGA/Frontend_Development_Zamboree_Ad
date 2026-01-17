@@ -3,7 +3,7 @@ name: Deploy Next.js (Self-Hosted VM)
 on:
   push:
     branches:
-      - main  # main branch me push pe deploy
+      - main  # main branch push pe deploy
 
 jobs:
   deploy:
@@ -12,6 +12,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Set Node & NPM PATH
+        # Yeh step PATH set kar dega taaki runner npm/pm2 recognize kare
+        run: |
+          echo "export PATH=$PATH:/home/develop_admin_vm/.nvm/versions/node/$(node -v)/bin" >> $GITHUB_ENV
 
       - name: Sync code to app folder
         run: |
